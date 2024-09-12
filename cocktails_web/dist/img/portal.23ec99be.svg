@@ -1,0 +1,18 @@
+<svg
+    version="1.0"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="50"
+    height="50"
+    viewBox="0 0 16 16"
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <g transform="translate(0,16) scale(0.1,-0.1)" fill="#0142D3" stroke="none">
+      <path
+        d="M20 100 l-25 -20 25 -20 c32 -25 88 -25 120 0 l25 20 -25 20 c-32 25-88 25 -120 0z m114 -10 c17 -17 -11 -35 -54 -35 -51 0 -73 20 -45 41 21 1780 13 99 -6z"
+      />
+      <path
+        d="M64 89 c-10 -17 13 -36 27 -22 12 12 4 33 -11 33 -5 0 -12 -5 -16-11z"
+      />
+    </g>
+</svg>

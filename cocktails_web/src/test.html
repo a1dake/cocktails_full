@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Боковое меню</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #F5F7F9;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            max-width: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 0;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            color: #A9B1B7;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .menu-item .icon {
+            margin-right: 10px;
+        }
+
+        .menu-item:hover,
+        .menu-item.active {
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+        }
+
+        .topbar {
+            flex-grow: 1;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            background-color: #F5F7F9;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .search-bar input {
+            border: none;
+            background: none;
+            outline: none;
+            flex-grow: 1;
+            padding-left: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .search-icon {
+            color: #A9B1B7;
+        }
+
+        .profile-btn {
+            display: flex;
+            align-items: center;
+            background-color: #F5F7F9;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .profile-btn .icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h2>Mr Bartmister</h2>
+        </div>
+        <ul class="menu">
+            <li class="menu-item active">
+                <span class="icon">👤</span>
+                <span class="text">Пользователи</span>
+            </li>
+            <li class="menu-item">
+                <span class="icon">📁</span>
+                <span class="text">Каталог рецептов</span>
+            </li>
+            <li class="menu-item">
+                <span class="icon">🔧</span>
+                <span class="text">Инструменты</span>
+            </li>
+            <li class="menu-item">
+                <span class="icon">📦</span>
+                <span class="text">Магазин</span>
+            </li>
+            <li class="menu-item">
+                <span class="icon">📞</span>
+                <span class="text">Тех. поддержка</span>
+            </li>
+            <li class="menu-item">
+                <span class="icon">📊</span>
+                <span class="text">Статистика</span>
+            </li>
+            <li class="menu-item">
+                <span class="icon">🎖️</span>
+                <span class="text">Баллы</span>
+            </li>
+            <li class="menu-item">
+                <span class="icon">📢</span>
+                <span class="text">Реклама</span>
+            </li>
+            <li class="menu-item">
+                <span class="icon">⚙️</span>
+                <span class="text">Личный кабинет</span>
+            </li>
+        </ul>
+    </div>
+    <div class="topbar">
+        <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Поиск">
+        </div>
+        <div class="profile-btn">
+            <span class="icon">👤</span>
+            <span class="text">Администратор</span>
+        </div>
+    </div>
+</body>
+</html>
